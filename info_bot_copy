@@ -1,0 +1,37 @@
+# !/bin/sh
+fi
+KIND="INFOBOT"
+start() {
+        echo -n $"Starting $KIND service: "
+        source ./Repos/ip_telegram_bot/virtualenv/env/bin/activate
+        python3 ./Repos/ip_telegram_bot/bot.py
+        echo
+}
+stop() {
+        echo -n $"Shutting down $KIND service "
+        pkill -f python3\ ./Repos/ip_telegram_bot/bot.py
+        echo
+}
+restart() {
+        echo -n $"Restarting $KIND service "
+        pkill -f python3\ ./Repos/ip_telegram_bot/bot.py
+        source ./Repos/ip_telegram_bot/virtualenv/env/bin/activate
+        python3 ./Repos/ip_telegram_bot/bot.py
+        echo
+}
+
+case "$1" in 
+        start) 
+                start
+                ;;
+        stop)
+                stop
+                ;;
+        restart)
+                restart
+                ;;
+        *)
+                echo $"Usage: $0 {start|stop|restart}"
+                exit 1
+esac
+exit &?

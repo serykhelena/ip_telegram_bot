@@ -6,7 +6,7 @@ from pyspectator.processor import Cpu
 from psutil import sensors_temperatures
 
 
-with open('bot_token.txt', 'r') as vip_file:
+with open('./Repos/ip_telegram_bot/bot_token.txt', 'r') as vip_file:
     TOKEN = vip_file.read()
 
 UNICORN_STICKER = "CAADAgADKQwAAiMhBQAB4UzwzHmfF30WBA"
