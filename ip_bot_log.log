@@ -1,0 +1,250 @@
+2019-09-12 14:56:53,952 - ERROR - could not convert string to float: 
+Traceback (most recent call last):
+  File "bot.py", line 47, in <module>
+    bot.polling(none_stop=True, interval=1)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 389, in polling
+    self.__threaded_polling(none_stop, interval, timeout)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 413, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/util.py", line 108, in raise_exceptions
+    six.reraise(self.exc_info[0], self.exc_info[1], self.exc_info[2])
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/six.py", line 693, in reraise
+    raise value
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/util.py", line 59, in run
+    task(*args, **kwargs)
+  File "bot.py", line 36, in command_start
+    'CPU temperature is: ' + str(getCPUtemperature())
+  File "bot.py", line 20, in getCPUtemperature
+    return float(tempStr)
+ValueError: could not convert string to float: 
+2019-09-12 15:05:24,614 - ERROR - Can't convert 'NoneType' object to str implicitly
+Traceback (most recent call last):
+  File "bot.py", line 55, in <module>
+    bot.polling(none_stop=True, interval=1)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 389, in polling
+    self.__threaded_polling(none_stop, interval, timeout)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 413, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/util.py", line 108, in raise_exceptions
+    six.reraise(self.exc_info[0], self.exc_info[1], self.exc_info[2])
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/six.py", line 686, in reraise
+    raise value
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/util.py", line 59, in run
+    task(*args, **kwargs)
+  File "bot.py", line 44, in command_start
+    'CPU temperature is: ' + getCPUtemperature()
+TypeError: Can't convert 'NoneType' object to str implicitly
+2019-09-12 15:13:47,467 - ERROR - Can't convert 'NoneType' object to str implicitly
+Traceback (most recent call last):
+  File "bot.py", line 62, in <module>
+    bot.polling(none_stop=True, interval=1)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 389, in polling
+    self.__threaded_polling(none_stop, interval, timeout)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 413, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/util.py", line 108, in raise_exceptions
+    six.reraise(self.exc_info[0], self.exc_info[1], self.exc_info[2])
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/six.py", line 686, in reraise
+    raise value
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/util.py", line 59, in run
+    task(*args, **kwargs)
+  File "bot.py", line 51, in command_start
+    'CPU load is: ' + getCPUload() + '\n'
+TypeError: Can't convert 'NoneType' object to str implicitly
+2019-09-12 15:41:28,388 - ERROR - Can't convert 'dict' object to str implicitly
+Traceback (most recent call last):
+  File "bot.py", line 63, in <module>
+    bot.polling(none_stop=True, interval=1)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 389, in polling
+    self.__threaded_polling(none_stop, interval, timeout)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 413, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/util.py", line 108, in raise_exceptions
+    six.reraise(self.exc_info[0], self.exc_info[1], self.exc_info[2])
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/six.py", line 686, in reraise
+    raise value
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/util.py", line 59, in run
+    task(*args, **kwargs)
+  File "bot.py", line 52, in command_start
+    'CPU load is: ' + getCPUload() + '\n'
+TypeError: Can't convert 'dict' object to str implicitly
+2019-09-12 15:47:26,170 - ERROR - Can't convert 'list' object to str implicitly
+Traceback (most recent call last):
+  File "bot.py", line 63, in <module>
+    bot.polling(none_stop=True, interval=1)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 389, in polling
+    self.__threaded_polling(none_stop, interval, timeout)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 413, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/util.py", line 108, in raise_exceptions
+    six.reraise(self.exc_info[0], self.exc_info[1], self.exc_info[2])
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/six.py", line 686, in reraise
+    raise value
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/util.py", line 59, in run
+    task(*args, **kwargs)
+  File "bot.py", line 52, in command_start
+    'CPU load is: ' + getCPUload() + '\n'
+TypeError: Can't convert 'list' object to str implicitly
+2019-09-12 15:48:40,157 - ERROR - Can't convert 'NoneType' object to str implicitly
+Traceback (most recent call last):
+  File "bot.py", line 65, in <module>
+    bot.polling(none_stop=True, interval=1)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 389, in polling
+    self.__threaded_polling(none_stop, interval, timeout)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 413, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/util.py", line 108, in raise_exceptions
+    six.reraise(self.exc_info[0], self.exc_info[1], self.exc_info[2])
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/six.py", line 686, in reraise
+    raise value
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/util.py", line 59, in run
+    task(*args, **kwargs)
+  File "bot.py", line 54, in command_start
+    'CPU load is: ' + getCPUload() + '\n'
+TypeError: Can't convert 'NoneType' object to str implicitly
+2019-09-12 15:49:23,931 - ERROR - Can't convert 'NoneType' object to str implicitly
+Traceback (most recent call last):
+  File "bot.py", line 66, in <module>
+    bot.polling(none_stop=True, interval=1)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 389, in polling
+    self.__threaded_polling(none_stop, interval, timeout)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 413, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/util.py", line 108, in raise_exceptions
+    six.reraise(self.exc_info[0], self.exc_info[1], self.exc_info[2])
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/six.py", line 686, in reraise
+    raise value
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/util.py", line 59, in run
+    task(*args, **kwargs)
+  File "bot.py", line 55, in command_start
+    'CPU load is: ' + getCPUload() + '\n'
+TypeError: Can't convert 'NoneType' object to str implicitly
+2019-09-12 15:49:53,728 - ERROR - Can't convert 'NoneType' object to str implicitly
+Traceback (most recent call last):
+  File "bot.py", line 66, in <module>
+    bot.polling(none_stop=True, interval=1)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 389, in polling
+    self.__threaded_polling(none_stop, interval, timeout)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 413, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/util.py", line 108, in raise_exceptions
+    six.reraise(self.exc_info[0], self.exc_info[1], self.exc_info[2])
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/six.py", line 686, in reraise
+    raise value
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/util.py", line 59, in run
+    task(*args, **kwargs)
+  File "bot.py", line 54, in command_start
+    'CPU temperature is: ' + getCPUtemperature() + '\n'
+TypeError: Can't convert 'NoneType' object to str implicitly
+2019-09-12 16:13:08,490 - ERROR - Can't convert 'float' object to str implicitly
+Traceback (most recent call last):
+  File "bot.py", line 57, in <module>
+    bot.polling(none_stop=True, interval=1)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 389, in polling
+    self.__threaded_polling(none_stop, interval, timeout)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 413, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/util.py", line 108, in raise_exceptions
+    six.reraise(self.exc_info[0], self.exc_info[1], self.exc_info[2])
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/six.py", line 686, in reraise
+    raise value
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/util.py", line 59, in run
+    task(*args, **kwargs)
+  File "bot.py", line 44, in command_start
+    'CPU temperature is: ' + getCPUtemperature() + '\n'
+TypeError: Can't convert 'float' object to str implicitly
+2019-09-12 16:14:11,164 - ERROR - name 'cpu' is not defined
+Traceback (most recent call last):
+  File "bot.py", line 57, in <module>
+    bot.polling(none_stop=True, interval=1)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 389, in polling
+    self.__threaded_polling(none_stop, interval, timeout)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 413, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/util.py", line 108, in raise_exceptions
+    six.reraise(self.exc_info[0], self.exc_info[1], self.exc_info[2])
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/six.py", line 686, in reraise
+    raise value
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/util.py", line 59, in run
+    task(*args, **kwargs)
+  File "bot.py", line 45, in command_start
+    'CPU load is: ' + getCPUload() + '\n'
+  File "bot.py", line 28, in getCPUload
+    return str(cpu.load)
+NameError: name 'cpu' is not defined
+2019-09-12 17:16:27,292 - ERROR - HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=30)
+Traceback (most recent call last):
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connectionpool.py", line 372, in _make_request
+    httplib_response = conn.getresponse(buffering=True)
+TypeError: getresponse() got an unexpected keyword argument 'buffering'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connectionpool.py", line 374, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/lib/python3.5/http/client.py", line 1213, in getresponse
+    response.begin()
+  File "/usr/lib/python3.5/http/client.py", line 307, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/python3.5/http/client.py", line 268, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/lib/python3.5/socket.py", line 575, in readinto
+    return self._sock.recv_into(b)
+  File "/usr/lib/python3.5/ssl.py", line 929, in recv_into
+    return self.read(nbytes, buffer)
+  File "/usr/lib/python3.5/ssl.py", line 791, in read
+    return self._sslobj.read(len, buffer)
+  File "/usr/lib/python3.5/ssl.py", line 575, in read
+    v = self._sslobj.read(len, buffer)
+socket.timeout: The read operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/adapters.py", line 370, in send
+    timeout=timeout
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connectionpool.py", line 597, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/util/retry.py", line 245, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/packages/six.py", line 310, in reraise
+    raise value
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connectionpool.py", line 544, in urlopen
+    body=body, headers=headers)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connectionpool.py", line 376, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connectionpool.py", line 304, in _raise_timeout
+    raise ReadTimeoutError(self, url, "Read timed out. (read timeout=%s)" % timeout_value)
+requests.packages.urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=30)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "bot.py", line 57, in <module>
+    logging.basicConfig(filename='ip_bot_log.log', filemode='a',
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 389, in polling
+    self.__threaded_polling(none_stop, interval, timeout)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 412, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/util.py", line 78, in raise_exceptions
+    six.reraise(self.exc_info[0], self.exc_info[1], self.exc_info[2])
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/six.py", line 686, in reraise
+    raise value
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/util.py", line 59, in run
+    task(*args, **kwargs)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 276, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1), timeout=timeout)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 246, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/apihelper.py", line 180, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/apihelper.py", line 54, in _make_request
+    timeout=(connect_timeout, read_timeout), proxies=proxy)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/sessions.py", line 465, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/sessions.py", line 573, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/adapters.py", line 433, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=30)
