@@ -1,203 +1,20 @@
-2019-09-12 14:56:53,952 - ERROR - could not convert string to float: 
+2019-09-14 14:49:34,055 - ERROR - ConnectionError occurred, args=(ProtocolError('Connection aborted.', OSError(101, 'Network is unreachable')),)
 Traceback (most recent call last):
-  File "bot.py", line 47, in <module>
-    bot.polling(none_stop=True, interval=1)
-  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 389, in polling
-    self.__threaded_polling(none_stop, interval, timeout)
-  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 413, in __threaded_polling
-    self.worker_pool.raise_exceptions()
-  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/util.py", line 108, in raise_exceptions
-    six.reraise(self.exc_info[0], self.exc_info[1], self.exc_info[2])
-  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/six.py", line 693, in reraise
-    raise value
-  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/util.py", line 59, in run
-    task(*args, **kwargs)
-  File "bot.py", line 36, in command_start
-    'CPU temperature is: ' + str(getCPUtemperature())
-  File "bot.py", line 20, in getCPUtemperature
-    return float(tempStr)
-ValueError: could not convert string to float: 
-2019-09-12 15:05:24,614 - ERROR - Can't convert 'NoneType' object to str implicitly
-Traceback (most recent call last):
-  File "bot.py", line 55, in <module>
-    bot.polling(none_stop=True, interval=1)
-  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 389, in polling
-    self.__threaded_polling(none_stop, interval, timeout)
-  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 413, in __threaded_polling
-    self.worker_pool.raise_exceptions()
-  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/util.py", line 108, in raise_exceptions
-    six.reraise(self.exc_info[0], self.exc_info[1], self.exc_info[2])
-  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/six.py", line 686, in reraise
-    raise value
-  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/util.py", line 59, in run
-    task(*args, **kwargs)
-  File "bot.py", line 44, in command_start
-    'CPU temperature is: ' + getCPUtemperature()
-TypeError: Can't convert 'NoneType' object to str implicitly
-2019-09-12 15:13:47,467 - ERROR - Can't convert 'NoneType' object to str implicitly
-Traceback (most recent call last):
-  File "bot.py", line 62, in <module>
-    bot.polling(none_stop=True, interval=1)
-  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 389, in polling
-    self.__threaded_polling(none_stop, interval, timeout)
-  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 413, in __threaded_polling
-    self.worker_pool.raise_exceptions()
-  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/util.py", line 108, in raise_exceptions
-    six.reraise(self.exc_info[0], self.exc_info[1], self.exc_info[2])
-  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/six.py", line 686, in reraise
-    raise value
-  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/util.py", line 59, in run
-    task(*args, **kwargs)
-  File "bot.py", line 51, in command_start
-    'CPU load is: ' + getCPUload() + '\n'
-TypeError: Can't convert 'NoneType' object to str implicitly
-2019-09-12 15:41:28,388 - ERROR - Can't convert 'dict' object to str implicitly
-Traceback (most recent call last):
-  File "bot.py", line 63, in <module>
-    bot.polling(none_stop=True, interval=1)
-  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 389, in polling
-    self.__threaded_polling(none_stop, interval, timeout)
-  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 413, in __threaded_polling
-    self.worker_pool.raise_exceptions()
-  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/util.py", line 108, in raise_exceptions
-    six.reraise(self.exc_info[0], self.exc_info[1], self.exc_info[2])
-  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/six.py", line 686, in reraise
-    raise value
-  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/util.py", line 59, in run
-    task(*args, **kwargs)
-  File "bot.py", line 52, in command_start
-    'CPU load is: ' + getCPUload() + '\n'
-TypeError: Can't convert 'dict' object to str implicitly
-2019-09-12 15:47:26,170 - ERROR - Can't convert 'list' object to str implicitly
-Traceback (most recent call last):
-  File "bot.py", line 63, in <module>
-    bot.polling(none_stop=True, interval=1)
-  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 389, in polling
-    self.__threaded_polling(none_stop, interval, timeout)
-  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 413, in __threaded_polling
-    self.worker_pool.raise_exceptions()
-  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/util.py", line 108, in raise_exceptions
-    six.reraise(self.exc_info[0], self.exc_info[1], self.exc_info[2])
-  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/six.py", line 686, in reraise
-    raise value
-  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/util.py", line 59, in run
-    task(*args, **kwargs)
-  File "bot.py", line 52, in command_start
-    'CPU load is: ' + getCPUload() + '\n'
-TypeError: Can't convert 'list' object to str implicitly
-2019-09-12 15:48:40,157 - ERROR - Can't convert 'NoneType' object to str implicitly
-Traceback (most recent call last):
-  File "bot.py", line 65, in <module>
-    bot.polling(none_stop=True, interval=1)
-  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 389, in polling
-    self.__threaded_polling(none_stop, interval, timeout)
-  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 413, in __threaded_polling
-    self.worker_pool.raise_exceptions()
-  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/util.py", line 108, in raise_exceptions
-    six.reraise(self.exc_info[0], self.exc_info[1], self.exc_info[2])
-  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/six.py", line 686, in reraise
-    raise value
-  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/util.py", line 59, in run
-    task(*args, **kwargs)
-  File "bot.py", line 54, in command_start
-    'CPU load is: ' + getCPUload() + '\n'
-TypeError: Can't convert 'NoneType' object to str implicitly
-2019-09-12 15:49:23,931 - ERROR - Can't convert 'NoneType' object to str implicitly
-Traceback (most recent call last):
-  File "bot.py", line 66, in <module>
-    bot.polling(none_stop=True, interval=1)
-  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 389, in polling
-    self.__threaded_polling(none_stop, interval, timeout)
-  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 413, in __threaded_polling
-    self.worker_pool.raise_exceptions()
-  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/util.py", line 108, in raise_exceptions
-    six.reraise(self.exc_info[0], self.exc_info[1], self.exc_info[2])
-  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/six.py", line 686, in reraise
-    raise value
-  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/util.py", line 59, in run
-    task(*args, **kwargs)
-  File "bot.py", line 55, in command_start
-    'CPU load is: ' + getCPUload() + '\n'
-TypeError: Can't convert 'NoneType' object to str implicitly
-2019-09-12 15:49:53,728 - ERROR - Can't convert 'NoneType' object to str implicitly
-Traceback (most recent call last):
-  File "bot.py", line 66, in <module>
-    bot.polling(none_stop=True, interval=1)
-  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 389, in polling
-    self.__threaded_polling(none_stop, interval, timeout)
-  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 413, in __threaded_polling
-    self.worker_pool.raise_exceptions()
-  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/util.py", line 108, in raise_exceptions
-    six.reraise(self.exc_info[0], self.exc_info[1], self.exc_info[2])
-  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/six.py", line 686, in reraise
-    raise value
-  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/util.py", line 59, in run
-    task(*args, **kwargs)
-  File "bot.py", line 54, in command_start
-    'CPU temperature is: ' + getCPUtemperature() + '\n'
-TypeError: Can't convert 'NoneType' object to str implicitly
-2019-09-12 16:13:08,490 - ERROR - Can't convert 'float' object to str implicitly
-Traceback (most recent call last):
-  File "bot.py", line 57, in <module>
-    bot.polling(none_stop=True, interval=1)
-  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 389, in polling
-    self.__threaded_polling(none_stop, interval, timeout)
-  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 413, in __threaded_polling
-    self.worker_pool.raise_exceptions()
-  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/util.py", line 108, in raise_exceptions
-    six.reraise(self.exc_info[0], self.exc_info[1], self.exc_info[2])
-  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/six.py", line 686, in reraise
-    raise value
-  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/util.py", line 59, in run
-    task(*args, **kwargs)
-  File "bot.py", line 44, in command_start
-    'CPU temperature is: ' + getCPUtemperature() + '\n'
-TypeError: Can't convert 'float' object to str implicitly
-2019-09-12 16:14:11,164 - ERROR - name 'cpu' is not defined
-Traceback (most recent call last):
-  File "bot.py", line 57, in <module>
-    bot.polling(none_stop=True, interval=1)
-  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 389, in polling
-    self.__threaded_polling(none_stop, interval, timeout)
-  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 413, in __threaded_polling
-    self.worker_pool.raise_exceptions()
-  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/util.py", line 108, in raise_exceptions
-    six.reraise(self.exc_info[0], self.exc_info[1], self.exc_info[2])
-  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/six.py", line 686, in reraise
-    raise value
-  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/util.py", line 59, in run
-    task(*args, **kwargs)
-  File "bot.py", line 45, in command_start
-    'CPU load is: ' + getCPUload() + '\n'
-  File "bot.py", line 28, in getCPUload
-    return str(cpu.load)
-NameError: name 'cpu' is not defined
-2019-09-12 17:16:27,292 - ERROR - HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=30)
-Traceback (most recent call last):
-  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connectionpool.py", line 372, in _make_request
-    httplib_response = conn.getresponse(buffering=True)
-TypeError: getresponse() got an unexpected keyword argument 'buffering'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connectionpool.py", line 374, in _make_request
-    httplib_response = conn.getresponse()
-  File "/usr/lib/python3.5/http/client.py", line 1213, in getresponse
-    response.begin()
-  File "/usr/lib/python3.5/http/client.py", line 307, in begin
-    version, status, reason = self._read_status()
-  File "/usr/lib/python3.5/http/client.py", line 268, in _read_status
-    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
-  File "/usr/lib/python3.5/socket.py", line 575, in readinto
-    return self._sock.recv_into(b)
-  File "/usr/lib/python3.5/ssl.py", line 929, in recv_into
-    return self.read(nbytes, buffer)
-  File "/usr/lib/python3.5/ssl.py", line 791, in read
-    return self._sslobj.read(len, buffer)
-  File "/usr/lib/python3.5/ssl.py", line 575, in read
-    v = self._sslobj.read(len, buffer)
-socket.timeout: The read operation timed out
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connectionpool.py", line 544, in urlopen
+    body=body, headers=headers)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connectionpool.py", line 341, in _make_request
+    self._validate_conn(conn)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connectionpool.py", line 761, in _validate_conn
+    conn.connect()
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connection.py", line 204, in connect
+    conn = self._new_conn()
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connection.py", line 134, in _new_conn
+    (self.host, self.port), self.timeout, **extra_kw)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/util/connection.py", line 88, in create_connection
+    raise err
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/util/connection.py", line 78, in create_connection
+    sock.connect(sa)
+OSError: [Errno 101] Network is unreachable
 
 During handling of the above exception, another exception occurred:
 
@@ -208,21 +25,95 @@ Traceback (most recent call last):
     _stacktrace=sys.exc_info()[2])
   File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/util/retry.py", line 245, in increment
     raise six.reraise(type(error), error, _stacktrace)
-  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/packages/six.py", line 310, in reraise
-    raise value
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/packages/six.py", line 309, in reraise
+    raise value.with_traceback(tb)
   File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connectionpool.py", line 544, in urlopen
     body=body, headers=headers)
-  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connectionpool.py", line 376, in _make_request
-    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
-  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connectionpool.py", line 304, in _raise_timeout
-    raise ReadTimeoutError(self, url, "Read timed out. (read timeout=%s)" % timeout_value)
-requests.packages.urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=30)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connectionpool.py", line 341, in _make_request
+    self._validate_conn(conn)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connectionpool.py", line 761, in _validate_conn
+    conn.connect()
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connection.py", line 204, in connect
+    conn = self._new_conn()
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connection.py", line 134, in _new_conn
+    (self.host, self.port), self.timeout, **extra_kw)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/util/connection.py", line 88, in create_connection
+    raise err
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/util/connection.py", line 78, in create_connection
+    sock.connect(sa)
+requests.packages.urllib3.exceptions.ProtocolError: ('Connection aborted.', OSError(101, 'Network is unreachable'))
 
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
-  File "bot.py", line 57, in <module>
-    logging.basicConfig(filename='ip_bot_log.log', filemode='a',
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/util.py", line 59, in run
+    task(*args, **kwargs)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 276, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1), timeout=timeout)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 246, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/apihelper.py", line 180, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/apihelper.py", line 54, in _make_request
+    timeout=(connect_timeout, read_timeout), proxies=proxy)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/sessions.py", line 465, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/sessions.py", line 573, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/adapters.py", line 415, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', OSError(101, 'Network is unreachable'))
+
+2019-09-14 14:49:34,056 - ERROR - ('Connection aborted.', OSError(101, 'Network is unreachable'))
+Traceback (most recent call last):
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connectionpool.py", line 544, in urlopen
+    body=body, headers=headers)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connectionpool.py", line 341, in _make_request
+    self._validate_conn(conn)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connectionpool.py", line 761, in _validate_conn
+    conn.connect()
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connection.py", line 204, in connect
+    conn = self._new_conn()
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connection.py", line 134, in _new_conn
+    (self.host, self.port), self.timeout, **extra_kw)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/util/connection.py", line 88, in create_connection
+    raise err
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/util/connection.py", line 78, in create_connection
+    sock.connect(sa)
+OSError: [Errno 101] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/adapters.py", line 370, in send
+    timeout=timeout
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connectionpool.py", line 597, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/util/retry.py", line 245, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/packages/six.py", line 309, in reraise
+    raise value.with_traceback(tb)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connectionpool.py", line 544, in urlopen
+    body=body, headers=headers)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connectionpool.py", line 341, in _make_request
+    self._validate_conn(conn)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connectionpool.py", line 761, in _validate_conn
+    conn.connect()
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connection.py", line 204, in connect
+    conn = self._new_conn()
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connection.py", line 134, in _new_conn
+    (self.host, self.port), self.timeout, **extra_kw)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/util/connection.py", line 88, in create_connection
+    raise err
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/util/connection.py", line 78, in create_connection
+    sock.connect(sa)
+requests.packages.urllib3.exceptions.ProtocolError: ('Connection aborted.', OSError(101, 'Network is unreachable'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "bot.py", line 58, in <module>
+    bot.polling(none_stop=True, interval=1)
   File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 389, in polling
     self.__threaded_polling(none_stop, interval, timeout)
   File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 412, in __threaded_polling
@@ -245,6 +136,828 @@ Traceback (most recent call last):
     resp = self.send(prep, **send_kwargs)
   File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/sessions.py", line 573, in send
     r = adapter.send(request, **kwargs)
-  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/adapters.py", line 433, in send
-    raise ReadTimeout(e, request=request)
-requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=30)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/adapters.py", line 415, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', OSError(101, 'Network is unreachable'))
+2019-09-14 14:50:33,639 - ERROR - ConnectionError occurred, args=(ProtocolError('Connection aborted.', OSError(101, 'Network is unreachable')),)
+Traceback (most recent call last):
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connectionpool.py", line 544, in urlopen
+    body=body, headers=headers)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connectionpool.py", line 341, in _make_request
+    self._validate_conn(conn)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connectionpool.py", line 761, in _validate_conn
+    conn.connect()
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connection.py", line 204, in connect
+    conn = self._new_conn()
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connection.py", line 134, in _new_conn
+    (self.host, self.port), self.timeout, **extra_kw)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/util/connection.py", line 88, in create_connection
+    raise err
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/util/connection.py", line 78, in create_connection
+    sock.connect(sa)
+OSError: [Errno 101] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/adapters.py", line 370, in send
+    timeout=timeout
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connectionpool.py", line 597, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/util/retry.py", line 245, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/packages/six.py", line 309, in reraise
+    raise value.with_traceback(tb)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connectionpool.py", line 544, in urlopen
+    body=body, headers=headers)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connectionpool.py", line 341, in _make_request
+    self._validate_conn(conn)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connectionpool.py", line 761, in _validate_conn
+    conn.connect()
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connection.py", line 204, in connect
+    conn = self._new_conn()
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connection.py", line 134, in _new_conn
+    (self.host, self.port), self.timeout, **extra_kw)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/util/connection.py", line 88, in create_connection
+    raise err
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/util/connection.py", line 78, in create_connection
+    sock.connect(sa)
+requests.packages.urllib3.exceptions.ProtocolError: ('Connection aborted.', OSError(101, 'Network is unreachable'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/util.py", line 59, in run
+    task(*args, **kwargs)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 276, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1), timeout=timeout)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 246, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/apihelper.py", line 180, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/apihelper.py", line 54, in _make_request
+    timeout=(connect_timeout, read_timeout), proxies=proxy)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/sessions.py", line 465, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/sessions.py", line 573, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/adapters.py", line 415, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', OSError(101, 'Network is unreachable'))
+
+2019-09-14 14:50:33,640 - ERROR - ('Connection aborted.', OSError(101, 'Network is unreachable'))
+Traceback (most recent call last):
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connectionpool.py", line 544, in urlopen
+    body=body, headers=headers)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connectionpool.py", line 341, in _make_request
+    self._validate_conn(conn)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connectionpool.py", line 761, in _validate_conn
+    conn.connect()
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connection.py", line 204, in connect
+    conn = self._new_conn()
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connection.py", line 134, in _new_conn
+    (self.host, self.port), self.timeout, **extra_kw)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/util/connection.py", line 88, in create_connection
+    raise err
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/util/connection.py", line 78, in create_connection
+    sock.connect(sa)
+OSError: [Errno 101] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/adapters.py", line 370, in send
+    timeout=timeout
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connectionpool.py", line 597, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/util/retry.py", line 245, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/packages/six.py", line 309, in reraise
+    raise value.with_traceback(tb)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connectionpool.py", line 544, in urlopen
+    body=body, headers=headers)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connectionpool.py", line 341, in _make_request
+    self._validate_conn(conn)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connectionpool.py", line 761, in _validate_conn
+    conn.connect()
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connection.py", line 204, in connect
+    conn = self._new_conn()
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connection.py", line 134, in _new_conn
+    (self.host, self.port), self.timeout, **extra_kw)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/util/connection.py", line 88, in create_connection
+    raise err
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/util/connection.py", line 78, in create_connection
+    sock.connect(sa)
+requests.packages.urllib3.exceptions.ProtocolError: ('Connection aborted.', OSError(101, 'Network is unreachable'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "bot.py", line 58, in <module>
+    bot.polling(none_stop=True, interval=1)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 389, in polling
+    self.__threaded_polling(none_stop, interval, timeout)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 412, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/util.py", line 78, in raise_exceptions
+    six.reraise(self.exc_info[0], self.exc_info[1], self.exc_info[2])
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/six.py", line 686, in reraise
+    raise value
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/util.py", line 59, in run
+    task(*args, **kwargs)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 276, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1), timeout=timeout)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 246, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/apihelper.py", line 180, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/apihelper.py", line 54, in _make_request
+    timeout=(connect_timeout, read_timeout), proxies=proxy)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/sessions.py", line 465, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/sessions.py", line 573, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/adapters.py", line 415, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', OSError(101, 'Network is unreachable'))
+2019-09-14 14:51:07,371 - ERROR - ConnectionError occurred, args=(ProtocolError('Connection aborted.', OSError(101, 'Network is unreachable')),)
+Traceback (most recent call last):
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connectionpool.py", line 544, in urlopen
+    body=body, headers=headers)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connectionpool.py", line 341, in _make_request
+    self._validate_conn(conn)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connectionpool.py", line 761, in _validate_conn
+    conn.connect()
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connection.py", line 204, in connect
+    conn = self._new_conn()
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connection.py", line 134, in _new_conn
+    (self.host, self.port), self.timeout, **extra_kw)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/util/connection.py", line 88, in create_connection
+    raise err
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/util/connection.py", line 78, in create_connection
+    sock.connect(sa)
+OSError: [Errno 101] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/adapters.py", line 370, in send
+    timeout=timeout
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connectionpool.py", line 597, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/util/retry.py", line 245, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/packages/six.py", line 309, in reraise
+    raise value.with_traceback(tb)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connectionpool.py", line 544, in urlopen
+    body=body, headers=headers)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connectionpool.py", line 341, in _make_request
+    self._validate_conn(conn)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connectionpool.py", line 761, in _validate_conn
+    conn.connect()
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connection.py", line 204, in connect
+    conn = self._new_conn()
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connection.py", line 134, in _new_conn
+    (self.host, self.port), self.timeout, **extra_kw)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/util/connection.py", line 88, in create_connection
+    raise err
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/util/connection.py", line 78, in create_connection
+    sock.connect(sa)
+requests.packages.urllib3.exceptions.ProtocolError: ('Connection aborted.', OSError(101, 'Network is unreachable'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/util.py", line 59, in run
+    task(*args, **kwargs)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 276, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1), timeout=timeout)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 246, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/apihelper.py", line 180, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/apihelper.py", line 54, in _make_request
+    timeout=(connect_timeout, read_timeout), proxies=proxy)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/sessions.py", line 465, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/sessions.py", line 573, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/adapters.py", line 415, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', OSError(101, 'Network is unreachable'))
+
+2019-09-14 14:51:07,372 - ERROR - ('Connection aborted.', OSError(101, 'Network is unreachable'))
+Traceback (most recent call last):
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connectionpool.py", line 544, in urlopen
+    body=body, headers=headers)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connectionpool.py", line 341, in _make_request
+    self._validate_conn(conn)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connectionpool.py", line 761, in _validate_conn
+    conn.connect()
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connection.py", line 204, in connect
+    conn = self._new_conn()
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connection.py", line 134, in _new_conn
+    (self.host, self.port), self.timeout, **extra_kw)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/util/connection.py", line 88, in create_connection
+    raise err
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/util/connection.py", line 78, in create_connection
+    sock.connect(sa)
+OSError: [Errno 101] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/adapters.py", line 370, in send
+    timeout=timeout
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connectionpool.py", line 597, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/util/retry.py", line 245, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/packages/six.py", line 309, in reraise
+    raise value.with_traceback(tb)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connectionpool.py", line 544, in urlopen
+    body=body, headers=headers)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connectionpool.py", line 341, in _make_request
+    self._validate_conn(conn)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connectionpool.py", line 761, in _validate_conn
+    conn.connect()
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connection.py", line 204, in connect
+    conn = self._new_conn()
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connection.py", line 134, in _new_conn
+    (self.host, self.port), self.timeout, **extra_kw)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/util/connection.py", line 88, in create_connection
+    raise err
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/util/connection.py", line 78, in create_connection
+    sock.connect(sa)
+requests.packages.urllib3.exceptions.ProtocolError: ('Connection aborted.', OSError(101, 'Network is unreachable'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "bot.py", line 58, in <module>
+    bot.polling(none_stop=True, interval=1)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 389, in polling
+    self.__threaded_polling(none_stop, interval, timeout)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 412, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/util.py", line 78, in raise_exceptions
+    six.reraise(self.exc_info[0], self.exc_info[1], self.exc_info[2])
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/six.py", line 686, in reraise
+    raise value
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/util.py", line 59, in run
+    task(*args, **kwargs)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 276, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1), timeout=timeout)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 246, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/apihelper.py", line 180, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/apihelper.py", line 54, in _make_request
+    timeout=(connect_timeout, read_timeout), proxies=proxy)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/sessions.py", line 465, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/sessions.py", line 573, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/adapters.py", line 415, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', OSError(101, 'Network is unreachable'))
+2019-09-14 14:51:32,227 - ERROR - ConnectionError occurred, args=(ProtocolError('Connection aborted.', OSError(101, 'Network is unreachable')),)
+Traceback (most recent call last):
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connectionpool.py", line 544, in urlopen
+    body=body, headers=headers)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connectionpool.py", line 341, in _make_request
+    self._validate_conn(conn)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connectionpool.py", line 761, in _validate_conn
+    conn.connect()
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connection.py", line 204, in connect
+    conn = self._new_conn()
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connection.py", line 134, in _new_conn
+    (self.host, self.port), self.timeout, **extra_kw)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/util/connection.py", line 88, in create_connection
+    raise err
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/util/connection.py", line 78, in create_connection
+    sock.connect(sa)
+OSError: [Errno 101] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/adapters.py", line 370, in send
+    timeout=timeout
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connectionpool.py", line 597, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/util/retry.py", line 245, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/packages/six.py", line 309, in reraise
+    raise value.with_traceback(tb)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connectionpool.py", line 544, in urlopen
+    body=body, headers=headers)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connectionpool.py", line 341, in _make_request
+    self._validate_conn(conn)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connectionpool.py", line 761, in _validate_conn
+    conn.connect()
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connection.py", line 204, in connect
+    conn = self._new_conn()
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connection.py", line 134, in _new_conn
+    (self.host, self.port), self.timeout, **extra_kw)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/util/connection.py", line 88, in create_connection
+    raise err
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/util/connection.py", line 78, in create_connection
+    sock.connect(sa)
+requests.packages.urllib3.exceptions.ProtocolError: ('Connection aborted.', OSError(101, 'Network is unreachable'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/util.py", line 59, in run
+    task(*args, **kwargs)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 276, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1), timeout=timeout)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 246, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/apihelper.py", line 180, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/apihelper.py", line 54, in _make_request
+    timeout=(connect_timeout, read_timeout), proxies=proxy)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/sessions.py", line 465, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/sessions.py", line 573, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/adapters.py", line 415, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', OSError(101, 'Network is unreachable'))
+
+2019-09-14 14:51:32,228 - ERROR - ('Connection aborted.', OSError(101, 'Network is unreachable'))
+Traceback (most recent call last):
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connectionpool.py", line 544, in urlopen
+    body=body, headers=headers)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connectionpool.py", line 341, in _make_request
+    self._validate_conn(conn)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connectionpool.py", line 761, in _validate_conn
+    conn.connect()
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connection.py", line 204, in connect
+    conn = self._new_conn()
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connection.py", line 134, in _new_conn
+    (self.host, self.port), self.timeout, **extra_kw)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/util/connection.py", line 88, in create_connection
+    raise err
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/util/connection.py", line 78, in create_connection
+    sock.connect(sa)
+OSError: [Errno 101] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/adapters.py", line 370, in send
+    timeout=timeout
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connectionpool.py", line 597, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/util/retry.py", line 245, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/packages/six.py", line 309, in reraise
+    raise value.with_traceback(tb)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connectionpool.py", line 544, in urlopen
+    body=body, headers=headers)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connectionpool.py", line 341, in _make_request
+    self._validate_conn(conn)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connectionpool.py", line 761, in _validate_conn
+    conn.connect()
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connection.py", line 204, in connect
+    conn = self._new_conn()
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/connection.py", line 134, in _new_conn
+    (self.host, self.port), self.timeout, **extra_kw)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/util/connection.py", line 88, in create_connection
+    raise err
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/packages/urllib3/util/connection.py", line 78, in create_connection
+    sock.connect(sa)
+requests.packages.urllib3.exceptions.ProtocolError: ('Connection aborted.', OSError(101, 'Network is unreachable'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "bot.py", line 58, in <module>
+    bot.polling(none_stop=True, interval=1)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 389, in polling
+    self.__threaded_polling(none_stop, interval, timeout)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 412, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/util.py", line 78, in raise_exceptions
+    six.reraise(self.exc_info[0], self.exc_info[1], self.exc_info[2])
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/six.py", line 686, in reraise
+    raise value
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/util.py", line 59, in run
+    task(*args, **kwargs)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 276, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1), timeout=timeout)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 246, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/apihelper.py", line 180, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/apihelper.py", line 54, in _make_request
+    timeout=(connect_timeout, read_timeout), proxies=proxy)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/sessions.py", line 465, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/sessions.py", line 573, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/requests/adapters.py", line 415, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', OSError(101, 'Network is unreachable'))
+2019-09-14 14:52:48,749 - ERROR - ApiException occurred, args=('A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:\n[b\'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}\']',)
+Traceback (most recent call last):
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/util.py", line 59, in run
+    task(*args, **kwargs)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 276, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1), timeout=timeout)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 246, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/apihelper.py", line 180, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/apihelper.py", line 56, in _make_request
+    return _check_result(method_name, result)['result']
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/apihelper.py", line 75, in _check_result
+    raise ApiException(msg, method_name, result)
+telebot.apihelper.ApiException: A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:
+[b'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}']
+
+2019-09-14 14:52:48,751 - ERROR - A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:
+[b'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}']
+2019-09-14 14:52:53,084 - ERROR - ApiException occurred, args=('A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:\n[b\'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}\']',)
+Traceback (most recent call last):
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/util.py", line 59, in run
+    task(*args, **kwargs)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 276, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1), timeout=timeout)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 246, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/apihelper.py", line 180, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/apihelper.py", line 56, in _make_request
+    return _check_result(method_name, result)['result']
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/apihelper.py", line 75, in _check_result
+    raise ApiException(msg, method_name, result)
+telebot.apihelper.ApiException: A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:
+[b'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}']
+
+2019-09-14 14:52:53,084 - ERROR - A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:
+[b'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}']
+2019-09-14 14:52:54,393 - ERROR - ApiException occurred, args=('A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:\n[b\'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}\']',)
+Traceback (most recent call last):
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/util.py", line 59, in run
+    task(*args, **kwargs)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 276, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1), timeout=timeout)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 246, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/apihelper.py", line 180, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/apihelper.py", line 56, in _make_request
+    return _check_result(method_name, result)['result']
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/apihelper.py", line 75, in _check_result
+    raise ApiException(msg, method_name, result)
+telebot.apihelper.ApiException: A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:
+[b'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}']
+
+2019-09-14 14:52:54,393 - ERROR - A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:
+[b'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}']
+2019-09-14 14:52:59,010 - ERROR - ApiException occurred, args=('A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:\n[b\'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}\']',)
+Traceback (most recent call last):
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/util.py", line 59, in run
+    task(*args, **kwargs)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 276, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1), timeout=timeout)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 246, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/apihelper.py", line 180, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/apihelper.py", line 56, in _make_request
+    return _check_result(method_name, result)['result']
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/apihelper.py", line 75, in _check_result
+    raise ApiException(msg, method_name, result)
+telebot.apihelper.ApiException: A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:
+[b'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}']
+
+2019-09-14 14:52:59,011 - ERROR - A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:
+[b'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}']
+2019-09-14 14:53:00,559 - ERROR - ApiException occurred, args=('A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:\n[b\'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}\']',)
+Traceback (most recent call last):
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/util.py", line 59, in run
+    task(*args, **kwargs)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 276, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1), timeout=timeout)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 246, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/apihelper.py", line 180, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/apihelper.py", line 56, in _make_request
+    return _check_result(method_name, result)['result']
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/apihelper.py", line 75, in _check_result
+    raise ApiException(msg, method_name, result)
+telebot.apihelper.ApiException: A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:
+[b'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}']
+
+2019-09-14 14:53:00,560 - ERROR - A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:
+[b'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}']
+2019-09-14 14:53:04,950 - ERROR - ApiException occurred, args=('A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:\n[b\'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}\']',)
+Traceback (most recent call last):
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/util.py", line 59, in run
+    task(*args, **kwargs)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 276, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1), timeout=timeout)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 246, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/apihelper.py", line 180, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/apihelper.py", line 56, in _make_request
+    return _check_result(method_name, result)['result']
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/apihelper.py", line 75, in _check_result
+    raise ApiException(msg, method_name, result)
+telebot.apihelper.ApiException: A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:
+[b'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}']
+
+2019-09-14 14:53:04,951 - ERROR - A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:
+[b'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}']
+2019-09-14 14:53:07,000 - ERROR - ApiException occurred, args=('A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:\n[b\'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}\']',)
+Traceback (most recent call last):
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/util.py", line 59, in run
+    task(*args, **kwargs)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 276, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1), timeout=timeout)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 246, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/apihelper.py", line 180, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/apihelper.py", line 56, in _make_request
+    return _check_result(method_name, result)['result']
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/apihelper.py", line 75, in _check_result
+    raise ApiException(msg, method_name, result)
+telebot.apihelper.ApiException: A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:
+[b'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}']
+
+2019-09-14 14:53:07,000 - ERROR - A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:
+[b'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}']
+2019-09-14 14:53:11,567 - ERROR - ApiException occurred, args=('A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:\n[b\'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}\']',)
+Traceback (most recent call last):
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/util.py", line 59, in run
+    task(*args, **kwargs)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 276, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1), timeout=timeout)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 246, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/apihelper.py", line 180, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/apihelper.py", line 56, in _make_request
+    return _check_result(method_name, result)['result']
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/apihelper.py", line 75, in _check_result
+    raise ApiException(msg, method_name, result)
+telebot.apihelper.ApiException: A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:
+[b'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}']
+
+2019-09-14 14:53:11,567 - ERROR - A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:
+[b'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}']
+2019-09-14 14:53:14,617 - ERROR - ApiException occurred, args=('A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:\n[b\'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}\']',)
+Traceback (most recent call last):
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/util.py", line 59, in run
+    task(*args, **kwargs)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 276, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1), timeout=timeout)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 246, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/apihelper.py", line 180, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/apihelper.py", line 56, in _make_request
+    return _check_result(method_name, result)['result']
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/apihelper.py", line 75, in _check_result
+    raise ApiException(msg, method_name, result)
+telebot.apihelper.ApiException: A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:
+[b'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}']
+
+2019-09-14 14:53:14,618 - ERROR - A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:
+[b'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}']
+2019-09-14 14:53:19,693 - ERROR - ApiException occurred, args=('A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:\n[b\'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}\']',)
+Traceback (most recent call last):
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/util.py", line 59, in run
+    task(*args, **kwargs)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 276, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1), timeout=timeout)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 246, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/apihelper.py", line 180, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/apihelper.py", line 56, in _make_request
+    return _check_result(method_name, result)['result']
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/apihelper.py", line 75, in _check_result
+    raise ApiException(msg, method_name, result)
+telebot.apihelper.ApiException: A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:
+[b'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}']
+
+2019-09-14 14:53:19,694 - ERROR - A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:
+[b'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}']
+2019-09-14 14:53:24,746 - ERROR - ApiException occurred, args=('A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:\n[b\'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}\']',)
+Traceback (most recent call last):
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/util.py", line 59, in run
+    task(*args, **kwargs)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 276, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1), timeout=timeout)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 246, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/apihelper.py", line 180, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/apihelper.py", line 56, in _make_request
+    return _check_result(method_name, result)['result']
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/apihelper.py", line 75, in _check_result
+    raise ApiException(msg, method_name, result)
+telebot.apihelper.ApiException: A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:
+[b'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}']
+
+2019-09-14 14:53:24,747 - ERROR - A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:
+[b'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}']
+2019-09-14 14:53:27,797 - ERROR - ApiException occurred, args=('A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:\n[b\'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}\']',)
+Traceback (most recent call last):
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/util.py", line 59, in run
+    task(*args, **kwargs)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 276, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1), timeout=timeout)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 246, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/apihelper.py", line 180, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/apihelper.py", line 56, in _make_request
+    return _check_result(method_name, result)['result']
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/apihelper.py", line 75, in _check_result
+    raise ApiException(msg, method_name, result)
+telebot.apihelper.ApiException: A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:
+[b'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}']
+
+2019-09-14 14:53:27,799 - ERROR - A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:
+[b'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}']
+2019-09-14 14:53:37,900 - ERROR - ApiException occurred, args=('A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:\n[b\'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}\']',)
+Traceback (most recent call last):
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/util.py", line 59, in run
+    task(*args, **kwargs)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 276, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1), timeout=timeout)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 246, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/apihelper.py", line 180, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/apihelper.py", line 56, in _make_request
+    return _check_result(method_name, result)['result']
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/apihelper.py", line 75, in _check_result
+    raise ApiException(msg, method_name, result)
+telebot.apihelper.ApiException: A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:
+[b'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}']
+
+2019-09-14 14:53:37,902 - ERROR - A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:
+[b'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}']
+2019-09-14 14:53:42,222 - ERROR - ApiException occurred, args=('A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:\n[b\'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}\']',)
+Traceback (most recent call last):
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/util.py", line 59, in run
+    task(*args, **kwargs)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 276, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1), timeout=timeout)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 246, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/apihelper.py", line 180, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/apihelper.py", line 56, in _make_request
+    return _check_result(method_name, result)['result']
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/apihelper.py", line 75, in _check_result
+    raise ApiException(msg, method_name, result)
+telebot.apihelper.ApiException: A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:
+[b'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}']
+
+2019-09-14 14:53:42,223 - ERROR - A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:
+[b'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}']
+2019-09-14 14:53:43,520 - ERROR - ApiException occurred, args=('A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:\n[b\'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}\']',)
+Traceback (most recent call last):
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/util.py", line 59, in run
+    task(*args, **kwargs)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 276, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1), timeout=timeout)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 246, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/apihelper.py", line 180, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/apihelper.py", line 56, in _make_request
+    return _check_result(method_name, result)['result']
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/apihelper.py", line 75, in _check_result
+    raise ApiException(msg, method_name, result)
+telebot.apihelper.ApiException: A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:
+[b'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}']
+
+2019-09-14 14:53:43,522 - ERROR - A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:
+[b'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}']
+2019-09-14 14:53:48,161 - ERROR - ApiException occurred, args=('A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:\n[b\'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}\']',)
+Traceback (most recent call last):
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/util.py", line 59, in run
+    task(*args, **kwargs)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 276, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1), timeout=timeout)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 246, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/apihelper.py", line 180, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/apihelper.py", line 56, in _make_request
+    return _check_result(method_name, result)['result']
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/apihelper.py", line 75, in _check_result
+    raise ApiException(msg, method_name, result)
+telebot.apihelper.ApiException: A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:
+[b'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}']
+
+2019-09-14 14:53:48,162 - ERROR - A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:
+[b'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}']
+2019-09-14 14:53:50,749 - ERROR - ApiException occurred, args=('A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:\n[b\'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}\']',)
+Traceback (most recent call last):
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/util.py", line 59, in run
+    task(*args, **kwargs)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 276, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1), timeout=timeout)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 246, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/apihelper.py", line 180, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/apihelper.py", line 56, in _make_request
+    return _check_result(method_name, result)['result']
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/apihelper.py", line 75, in _check_result
+    raise ApiException(msg, method_name, result)
+telebot.apihelper.ApiException: A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:
+[b'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}']
+
+2019-09-14 14:53:50,750 - ERROR - A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:
+[b'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}']
+2019-09-14 14:53:55,124 - ERROR - ApiException occurred, args=('A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:\n[b\'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}\']',)
+Traceback (most recent call last):
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/util.py", line 59, in run
+    task(*args, **kwargs)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 276, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1), timeout=timeout)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 246, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/apihelper.py", line 180, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/apihelper.py", line 56, in _make_request
+    return _check_result(method_name, result)['result']
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/apihelper.py", line 75, in _check_result
+    raise ApiException(msg, method_name, result)
+telebot.apihelper.ApiException: A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:
+[b'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}']
+
+2019-09-14 14:53:55,125 - ERROR - A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:
+[b'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}']
+2019-09-14 14:53:56,423 - ERROR - ApiException occurred, args=('A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:\n[b\'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}\']',)
+Traceback (most recent call last):
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/util.py", line 59, in run
+    task(*args, **kwargs)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 276, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1), timeout=timeout)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 246, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/apihelper.py", line 180, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/apihelper.py", line 56, in _make_request
+    return _check_result(method_name, result)['result']
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/apihelper.py", line 75, in _check_result
+    raise ApiException(msg, method_name, result)
+telebot.apihelper.ApiException: A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:
+[b'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}']
+
+2019-09-14 14:53:56,424 - ERROR - A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:
+[b'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}']
+2019-09-14 14:54:00,973 - ERROR - ApiException occurred, args=('A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:\n[b\'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}\']',)
+Traceback (most recent call last):
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/util.py", line 59, in run
+    task(*args, **kwargs)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 276, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1), timeout=timeout)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 246, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/apihelper.py", line 180, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/apihelper.py", line 56, in _make_request
+    return _check_result(method_name, result)['result']
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/apihelper.py", line 75, in _check_result
+    raise ApiException(msg, method_name, result)
+telebot.apihelper.ApiException: A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:
+[b'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}']
+
+2019-09-14 14:54:00,974 - ERROR - A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:
+[b'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}']
+2019-09-14 14:54:02,521 - ERROR - ApiException occurred, args=('A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:\n[b\'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}\']',)
+Traceback (most recent call last):
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/util.py", line 59, in run
+    task(*args, **kwargs)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 276, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1), timeout=timeout)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/__init__.py", line 246, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/apihelper.py", line 180, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/apihelper.py", line 56, in _make_request
+    return _check_result(method_name, result)['result']
+  File "/home/user-sau-nuc/Repos/ip_telegram_bot/virtualenv/env/lib/python3.5/site-packages/telebot/apihelper.py", line 75, in _check_result
+    raise ApiException(msg, method_name, result)
+telebot.apihelper.ApiException: A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:
+[b'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}']
+
+2019-09-14 14:54:02,522 - ERROR - A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:
+[b'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}']
