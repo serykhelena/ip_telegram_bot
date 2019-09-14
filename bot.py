@@ -4,6 +4,7 @@ import socket
 import logging
 from pyspectator.processor import Cpu 
 from psutil import sensors_temperatures
+from telebot import apihelper
 
 
 with open('bot_token.txt', 'r') as vip_file:
@@ -15,7 +16,7 @@ if TOKEN == 0:
     print("No token at all")
 
 bot = telebot.TeleBot(TOKEN)
-# logger = telebot.logger
+apihelper.proxy = {'http' : 'http://10.128.0.100:8080'}
 
 cpu = Cpu(monitoring_latency=1)
 
